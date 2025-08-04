@@ -20,5 +20,5 @@ Bu proje, veri bilimi ve yazılım mühendisliği süreçlerini bir araya getire
 - Veri bilimi öğrencileri
 - Yazılım geliştirme sürecini öğrenmek isteyenler
 - SQL tabanlı uygulama yapmak isteyen geliştiriciler
-- Eğitim sektörü için dijital çözümler arayanlar
+- Eğitim sektörü için dijital çözümler arayanlar                                                                                                                                                                                                                                                                                          ✨ Bu proje, yazılım geliştirme süreçlerini öğrenmek ve uygulamak amacıyla 5 fazlı yaklaşıma uygun olarak yapılandırılmıştır.
 
