@@ -24,6 +24,10 @@ Bu proje, veri bilimi ve yazılım mühendisliği süreçlerini bir araya getire
 ## Dockerized
 Bu proje, öğrenci performans verilerini analiz etmek ve görselleştirmek amacıyla, tam bir yazılım geliştirme yaşam döngüsü (SDLC) simülasyonu ile geliştirilmiş, interaktif bir web uygulamasıdır. Proje, Docker ile paketlenerek her ortamda çalışmaya hazır hale getirilmiştir.
 
+### 📸 Uygulama Ekran Görüntüsü
+
+<!-- ![Proje-3 arayüzü](https://github.com/user-attachments/assets/7f4b4951-705a-4b40-a121-e26f939d1622)
+ -->
 ---
 
 ### ✨ Canlı Uygulama ✨
