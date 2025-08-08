@@ -26,8 +26,7 @@ Bu proje, öğrenci performans verilerini analiz etmek ve görselleştirmek amac
 
 ### 📸 Uygulama Ekran Görüntüsü
 
-<!-- ![Proje-3 arayüzü](https://github.com/user-attachments/assets/7f4b4951-705a-4b40-a121-e26f939d1622)
- -->
+[Proje-3 arayüzü](https://github.com/user-attachments/assets/7f4b4951-705a-4b40-a121-e26f939d1622)
 ---
 
 ### ✨ Canlı Uygulama ✨
