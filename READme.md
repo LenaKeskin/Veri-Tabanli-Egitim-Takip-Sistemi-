@@ -28,17 +28,9 @@ Bu proje, öğrenci performans verilerini analiz etmek ve görselleştirmek amac
 
 ### ✨ Canlı Uygulama ✨
 
-Uygulamanın çalışan bir versiyonu, Render veya Streamlit Community Cloud gibi bir bulut servisi üzerinde yayınlanmıştır/yayınlanabilir.
+Uygulamanın çalışan versiyonuna aşağıdaki linke tıklayarak erişebilirsiniz:
 
-**[Uygulamayı Canlı Görüntülemek İçin Buraya Tıklayın](https://senin-uygulama-linkin.onrender.com)**
-
----
-
-### 📸 Uygulama Ekran Görüntüsü
-
-*(Uygulamanın en son halinin (analiz tablosu ve veri tablosu görünen) bir ekran görüntüsünü alıp buraya koymalısın)*
-
-![Uygulama Arayüzü](https://i.imgur.com/YENI_EKRAN_GORUNTUSU_LINKI.png) 
+**[Uygulamayı Canlı Görüntülemek İçin Buraya Tıklayın](https://lenakeskin-veri-tabanli-egitim-takip-sistemi--app-n885b1.streamlit.app/)**
 
 ---
 
