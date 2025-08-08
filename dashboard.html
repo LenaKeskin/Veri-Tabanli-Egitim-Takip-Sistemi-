@@ -1,0 +1,50 @@
+<!-- templates/dashboard.html -->
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eğitim Dashboard</title>
+    <!-- Modern bir görünüm için Bootstrap 5 CSS'i ekliyoruz -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { background-color: #f8f9fa; }
+        .card-title { color: #0d6efd; }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4 text-primary">🏫 Eğitim Takip Sistemi</h1>
+        <p class="text-center text-muted mb-5">Öğrenci Bazlı Ders ve Sınav Sonuçları</p>
+        
+        <div class="row">
+            <!-- Python'dan gelen 'students' listesindeki her öğrenci için bir döngü başlatıyoruz -->
+            {% for student in students %}
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-header bg-primary text-white">
+                        <h5 class="card-title mb-0">{{ student.name }}</h5>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <!-- Her öğrencinin 'courses' listesindeki her kurs için bir döngü başlatıyoruz -->
+                        {% for course in student.courses %}
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <span>
+                                <strong>{{ course.name }}</strong><br>
+                                <small class="text-muted">{{ course.exam_type }}</small>
+                            </span>
+                            <!-- Not 70'den büyükse yeşil, küçükse sarı bir etiket göster -->
+                            <span class="badge fs-6 {{ 'bg-success' if course.score >= 70 else 'bg-warning text-dark' }}">
+                                {{ course.score }}
+                            </span>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>

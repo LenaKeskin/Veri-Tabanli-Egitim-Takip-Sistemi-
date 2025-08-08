@@ -1,0 +1,61 @@
+# 📝 Gereksinimler Dokümanı
+
+## 🎯 Amaç
+
+Bu doküman, "Veri Tabanlı Eğitim Takip Sistemi" projesi kapsamında geliştirilecek yazılımın fonksiyonel gereksinimlerini açıklamaktadır.  
+Sistem; öğretmenlerin öğrencilerin sınav başarılarını ve yoklama durumlarını takip edebilmesini, öğrencilerin ise kendi akademik bilgilerini görüntüleyebilmesini amaçlamaktadır.
+
+---
+
+## 👤 Kullanıcı Rolleri ve Fonksiyonel Gereksinimler
+
+### 🧑‍🏫 Öğretmen Yetkileri
+
+- [ ] Yeni öğrenci kaydı oluşturabilir.
+- [ ] Öğrenci bilgilerini güncelleyebilir veya silebilir.
+- [ ] Kendi derslerine ait not girişleri yapabilir (vize, final).
+- [ ] Yoklama kaydı oluşturabilir.
+- [ ] Ders bazlı öğrenci başarı raporları oluşturabilir/görüntüleyebilir.
+
+### 🧑‍🎓 Öğrenci Yetkileri
+
+- [ ] Sadece kendi notlarını görüntüleyebilir.
+- [ ] Sadece kendi yoklama kayıtlarını görüntüleyebilir.
+- [ ] Giriş yaparak sisteme erişebilir.
+
+---
+
+## 🗃️ Veritabanı Yapısı (Kavramsal)
+
+| Tablo Adı     | Açıklama                                                                 |
+|---------------|--------------------------------------------------------------------------|
+| `users`       | Öğrenciler ve öğretmenlerin kimlik bilgileri, roller ve giriş bilgileri |
+| `courses`     | Ders isimleri ve hangi öğretmene ait olduğu bilgisi                     |
+| `grades`      | Her öğrencinin not bilgisi (vize, final gibi)                            |
+| `attendance`  | Her öğrencinin ders bazlı yoklama bilgileri                              |
+
+---
+
+## 📚 Örnek Veri Akışı
+
+1. Öğretmen sisteme giriş yapar.
+2. Kendi dersine ait öğrenci listesi görüntülenir.
+3. Öğretmen yoklama alır ve sınav notlarını girer.
+4. Öğrenci, sistemde kendi notlarını ve yoklamalarını görür.
+
+---
+
+## 🔐 İş Kuralları (Business Rules)
+
+- [ ] Öğrenciler yalnızca kendi bilgilerini görebilir.
+- [ ] Öğretmenler sadece kendi derslerine ait verileri yönetebilir.
+- [ ] Her kullanıcı sisteme e-posta ve şifre ile giriş yapmalıdır.
+- [ ] Sistemde öğretmen dışındaki kullanıcılar (öğrenciler) herhangi bir kayıt işlemi yapamaz.
+
+---
+
+## 🚧 Gelecekteki Genişletmeler (Opsiyonel)
+
+- Yönetici (Admin) paneli eklenebilir.
+- PDF/Excel rapor çıktıları oluşturulabilir.
+- Mobil uyumlu versiyon geliştirilebilir.

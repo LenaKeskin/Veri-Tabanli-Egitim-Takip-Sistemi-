@@ -1,0 +1,35 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Öğrenci Not Sistemi</title>
+    <!-- CSS dosyamızı dışarıdan çağırıyoruz -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Öğrenci Not Sistemi</h1>
+            <p>Veri Bankası</p>
+        </header>
+        <nav class="filters">
+            <div class="search-wrapper">
+                <input type="text" id="search-input" placeholder="Öğrenci adı ile ara...">
+            </div>
+            <div class="select-wrapper">
+                <select id="course-filter"><option value="all">Tüm Dersler</option></select>
+                <select id="exam-type-filter"><option value="all">Tüm Sınav Türleri</option></select>
+            </div>
+        </nav>
+        <main id="card-container" class="card-grid">
+            <!-- Öğrenci kartları JavaScript tarafından buraya eklenecek -->
+        </main>
+    </div>
+
+    <!-- JavaScript dosyamızı sayfanın en sonunda çağırıyoruz (performans için en iyi yöntemdir) -->
+    <script src="script.js"></script>
+</body>
+</html>
